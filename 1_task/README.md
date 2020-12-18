@@ -9,7 +9,7 @@
     
       source env/bin/activate
     
-    установка пакутов
+    установка пакетов
     
       pip install -r requirements.txt
     
