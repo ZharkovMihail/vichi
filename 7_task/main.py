@@ -57,8 +57,8 @@ def dif_2(p_1, p_2, p_3, i):
                 (i - 1) * (p_3(x) - x * p_2(x)) - (i + 2) * x * (p_2(x) - x * p_1(x)))
 
 
-def f(x): return math.log10(2 + x) * (x-1) - (3*x**2 + 7*x + 2*(x+2)**2*math.log10(x+2) - 4)/(x+2)**2
-
+def f(x): return math.log(2 + x) * (x-1) - 2*(x**2+3*x-1)/(x+2)**2 - math.log(x+2)
+# def f(x): return math.log10(2 + x) * (x-1) - (x+5)/(x+2)**2
 
 def k(x): return x
 
@@ -69,7 +69,7 @@ def k_d(x): return 0
 def q(x): return 1
 
 
-def u(x): return math.log10(2 + x) * (x-1)
+def u(x): return math.log(2 + x) * (x-1)
 
 
 n = [3, 5, 7, 10]
